@@ -33,12 +33,16 @@ public class Gite extends Logement {
 
     @Override
     public String toString() {
-        String returnValue = "Type de logement : Gîte";
+        String returnValue = "\nType de logement : Gîte";
         returnValue += super.toString();
 
         return returnValue;
     }
 
+    @Override
+    protected int calculerPrixLogement() {
+        return Integer.parseInt(getPrixJour()) + getFraisEntretien();
+    }
 
-    //endregion
+//endregion
 }

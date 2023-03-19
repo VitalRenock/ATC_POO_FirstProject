@@ -51,7 +51,7 @@ public class Localisation {
 
     public String toString() {
 
-        String returnValue = "Localisation : " + getPays();
+        String returnValue = "\nLocalisation : " + getPays();
         returnValue += "\nDépartement : " + getDepartement();
         returnValue += "\nVille : " + getVille();
 

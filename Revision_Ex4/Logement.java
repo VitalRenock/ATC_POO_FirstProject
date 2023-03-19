@@ -1,6 +1,6 @@
 package Revision_Ex4;
 
-public class Logement {
+public abstract class Logement {
 
     //region Properties
 
@@ -51,12 +51,14 @@ public class Logement {
     //region Methods
 
     public String toString() {
-        String returnValue = "Localisation : " + getLocalisation().toString();
-        returnValue += "Prix total par Jour : " + getPrixJour();
-        returnValue += "Nombre d'étoile(s) : " + getNbreEtoile();
+        String returnValue = getLocalisation().toString();
+        returnValue += "\nPrix total par Jour : " + calculerPrixLogement();
+        returnValue += "\nNombre d'étoile(s) : " + getNbreEtoile();
 
         return returnValue;
     }
+
+    protected abstract int calculerPrixLogement();
 
     //endregion
 }
