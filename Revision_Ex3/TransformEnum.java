@@ -8,7 +8,7 @@ public class TransformEnum {
         text.replace('ê', 'e');
         text.replace('î', 'i');
         text.replace('ï', 'i');
-        text.replace('-', '');
+        text.replace('-', '.');
         text.replace('é', 'e');
 
         return text.toUpperCase();
