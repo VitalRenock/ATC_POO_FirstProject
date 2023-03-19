@@ -5,7 +5,7 @@ public class Etudiant extends Personne {
     //region Properties
 
     private Cours cours;
-    private String annee;
+    private int annee;
 
     //endregion
 
@@ -27,11 +27,11 @@ public class Etudiant extends Personne {
         this.cours = cours;
     }
 
-    public String getAnnee() {
+    public int getAnnee() {
         return annee;
     }
 
-    public void setAnnee(String annee) {
+    public void setAnnee(int annee) {
         this.annee = annee;
     }
 
@@ -42,7 +42,9 @@ public class Etudiant extends Personne {
     @Override
     public void afficheTache() {
         super.afficheTache();
-        System.out.println("Je suis dans le cours " + getCours() + " et dans l'année " + getAnnee());
+        System.out.println("Cours: " + getCours());
+        System.out.println("Année: " + getAnnee());
+        System.out.println("------------------------------------------");
     }
 
     //endregion

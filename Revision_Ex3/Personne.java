@@ -1,6 +1,6 @@
 package Revision_Ex3;
 
-public class Personne {
+public abstract class Personne {
 
     //region Properties
 
@@ -57,6 +57,7 @@ public class Personne {
     }
 
     public void afficheInfos() {
+        System.out.println("------------------------------------------");
         System.out.println("Nom: " + getNom());
         System.out.println("Prénom: " + getPrenom());
         System.out.println("NISS: " + getNiss());

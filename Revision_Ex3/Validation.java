@@ -29,12 +29,14 @@ public class Validation {
 
     public static boolean validateMatricule(String matricule) {
 
-        //lenght 6
+        if (matricule.length() != 6)
+            return false;
 
-        //Character.getType(matricule.charat(i) != 1
+        for (int i = 0; i < 3; i++)
+            if (Character.getType(matricule.charAt(i)) != 1)
+                return false;
 
-        //parseInt(matricule.substring)
-        return true;
+        return parseInt(matricule.substring(3));
     }
 
     public static boolean parseInt(String text) {
@@ -47,7 +49,6 @@ public class Validation {
 
             return false;
         }
-
     }
 
     //endregion

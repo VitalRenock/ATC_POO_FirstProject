@@ -1,10 +1,16 @@
 package Revision_Ex3;
 
-public class Employe extends Personne {
+public abstract class Employe extends Personne {
 
     //region Properties
 
     private String matricule;
+
+    //endregion
+
+    //region Constructors
+
+    public Employe() {}
 
     //endregion
 
@@ -30,4 +36,5 @@ public class Employe extends Personne {
 
 
     //endregion
+
 }

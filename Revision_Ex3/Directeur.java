@@ -16,6 +16,8 @@ public class Directeur extends Employe {
     public void afficheTache() {
         super.afficheTache();
         System.out.println("Je dirige l'école");
+        System.out.println("------------------------------------------");
+
     }
 
     //endregion

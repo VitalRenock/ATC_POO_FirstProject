@@ -34,12 +34,13 @@ public class Secretaire extends Employe implements ISecretariat {
     public void afficheTache() {
         super.afficheTache();
         System.out.println("Je m'occupe des tâches administratives.");
+        afficheHoraire();
+        System.out.println("------------------------------------------");
     }
 
     @Override
-    public void afficheHoraire() {
-        System.out.println("Je travaille à " + getHoraire());
-    }
+    public void afficheHoraire() { System.out.println("Je travaille à " + getHoraire()); }
 
     //endregion
+
 }
