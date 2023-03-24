@@ -17,7 +17,6 @@ public abstract class Logement {
         this.localisation = localisation;
     }
 
-
     //endregion
 
     //region Getters / Setters
@@ -49,6 +48,13 @@ public abstract class Logement {
     //endregion
 
     //region Methods
+
+    public String toString2() {
+        return (this instanceof Gite ? "Gîte" : "Chambre Hôtel")
+                + "\n" + localisation.toString()
+                + "\nPrix total par jour : " + calculerPrixLogement() + " euros"
+                + "\nNombre d'étoile(s) : " + getNbreEtoile();
+    }
 
     public String toString() {
         String returnValue = getLocalisation().toString();

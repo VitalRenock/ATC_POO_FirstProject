@@ -81,6 +81,10 @@ public class Reservation {
             return exception.getMessage();
         }
     }
+    public void controler(int dureeMax) throws DureeException {
+        if (getDuree() > dureeMax)
+            throw new DureeException();
+    }
 
     //endregion
 }

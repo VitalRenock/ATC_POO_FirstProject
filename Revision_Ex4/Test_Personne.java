@@ -64,11 +64,21 @@ public class Test_Personne {
 
 
         // Affichage
+        // for ( Reservation reservation : reservations)
+        //      System.out.println(reservation.toString());
+
         for ( Reservation reservation : reservations) {
-
-            System.out.println(reservation.toString());
-
+            try {
+                System.out.println(reservation.toString());
+                reservation.controler();
+                System.out.println("\nRéservation OK");
+            }
+            catch (DureeException exception) {
+                System.out.println("\nRéservation refusé" + exception.getMessage());
+            }
         }
+
+
 
     }
 

@@ -4,6 +4,9 @@ public class DureeException extends Exception {
 
     //region Constructors
 
+    public DureeException() {
+    }
+
     public DureeException(String message) {
         super(message);
     }
