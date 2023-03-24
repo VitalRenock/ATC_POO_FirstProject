@@ -1,6 +1,6 @@
 package Revision_Ex5;
 
-public class MotorVehicle extends Vehicle {
+public class MotorVehicle extends Vehicle implements IEngine, IDriveVehicle {
 
     //region Properties
 
